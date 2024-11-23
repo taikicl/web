@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ブロックされました。</title>
+    <style type="text/css">
+        .infobox {
+		border-top: 1px solid #053394;
+		border-right: 1px solid #053394;
+		border-bottom: 1px solid #053394;
+		border-left: 1px solid #053394;
+        }
+        .infoul {
+            border-top-style: none;
+            border-right-style: none;
+            border-bottom-style: solid;
+            border-left-style: none;
+            border-top-color: #053394;
+            border-right-color: #053394;
+            border-bottom-color: #053394;
+            border-left-color: #053394;
+        ; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px}
+        .btn-plus {
+            width: 20px;
+            height: 20px;
+            padding: 0;
+        }
+        .prohibit-msg1{
+            margin-left: 10px;
+            white-space: pre;
+	    }
+        /* 追加 */
+        #reasonLabel:hover {
+            cursor: pointer;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function () {
+        // iframe
+        if (window.top !== window.self) {
+            var orgHTML = document.documentElement.outerHTML;
+            window.addEventListener('click', function(){
+                var newWindow = window.open("", "ifblockwindow", "width=850,height=500");
+                newWindow.document.write(orgHTML);
+                newWindow.document.close();
+            });
+        }
+
+        // mobile
+        const ua = navigator.userAgent.toLowerCase();
+        const isiPhone = (ua.indexOf('iphone') > -1);
+        const isAndroid = ((ua.indexOf('android') > -1) && (ua.indexOf('mobile') > -1));
+        if (isiPhone) {
+            const head = document.head;
+            head.insertAdjacentHTML('beforeEnd', '<META name="viewport" content="width=device-width, initial-scale=1.0">');
+            let styleTag = document.createElement('style');
+            styleTag.innerText = `
+                input[type="submit"] {
+                    appearance: none;
+                    -webkit-appearance: none;
+                }
+            `;
+            head.insertAdjacentElement('beforeEnd', styleTag);
+        } else if (isAndroid) {
+            const head = document.head;
+            head.insertAdjacentHTML('beforeEnd', '<META name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">');
+        }
+        if (isiPhone || isAndroid) {
+            const head = document.head;
+            let styleTag = document.createElement('style');
+            styleTag.innerText = `
+                body {
+                -webkit-text-size-adjust: 100%;
+                }
+                pre {
+                    white-space: pre-wrap;
+                }
+                .prohibit-msg1{
+                    margin-left: 10px;
+                    white-space: pre-wrap;
+                }
+                img {
+                    max-width: 100%;
+                }
+                .change-mobile-table, .change-mobile-table tr td {
+                    width: 100%;
+                    max-width: 480px;
+                }
+                .change-mobile-button {
+                padding: 5 12;
+                }
+                input[type="password"] {
+                    width: 100%;
+                }
+            `;
+            head.insertAdjacentElement('beforeEnd', styleTag);
+        }
+    });
+    </script>
+    <script src="script.js"></script>
+</head>
+<body bgcolor="#ffffff" text="#000000" leftmargin="16" topmargin="16" marginwidth="16" marginheight="16">
+    <table border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td class="titleimg-td">
+                    <img src="https://if74-r.digitalartscloud.com:443/inetcloud.cts/block.jpg?R0wqv4b191D8PmA87m5pjf9tc03d8BXK/HZ2QhD94Fo=">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="change-mobile-table" border="0" cellspacing="0" cellpadding="0" width="480" height="16">
+        <tbody>
+            <tr>
+                <td width="480" height="16">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" border="0" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td valign="middle">
+                    <pre>このページは「i-FILTER@Cloud」によりブロックされました。</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" border="0" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td valign="middle">
+                    <pre></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="change-mobile-table" border="0" cellpadding="0" cellspacing="0" width="480" height="16">
+        <tbody>
+            <tr>
+                <td width="480" height="16">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- URL -->
+    <table border="0" cellspacing="0" cellpadding="2">
+        <tbody>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td width="120" align="center" nowrap bgcolor="#F5F9Fd" class="infobox">
+                                    <table border="0" cellspacing="0" cellpadding="4">
+                                        <tbody>
+                                            <tr>
+                                                <td nowrap>
+                                                    <font color="#053394" size="2">URL</font>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="infoul">
+                                    <table border="0" cellpadding="4" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td nowrap>
+                                                    <font size="2" id="url">エラー</font>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- ブロック理由 -->
+    <table border="0" cellspacing="0" cellpadding="2">
+        <tbody>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td width="120" align="center" nowrap bgcolor="#F5F9Fd" class="infobox">
+                                    <table border="0" cellspacing="0" cellpadding="4">
+                                        <tbody>
+                                            <tr>
+                                                <td nowrap>
+                                                    <font color="#053394" size="2" id="reasonLabel">ブロック理由</font>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="infoul">
+                                    <table border="0" cellpadding="4" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td nowrap>
+                                                    <font size="2" id="blreason">エラー</font>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- IPアドレス -->
+    <table border="0" cellspacing="0" cellpadding="2">
+        <tbody>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td width="120" align="center" nowrap bgcolor="#F5F9Fd" class="infobox">
+                                    <table border="0" cellspacing="0" cellpadding="4">
+                                        <tbody>
+                                            <tr>
+                                                <td nowrap>
+                                                    <font color="#053394" size="2">IPアドレス</font>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="infoul">
+                                    <table border="0" cellpadding="4" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td nowrap>
+                                                    <font size="2" id="ip">XX.XX.XXX.XX</font>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 認証ユーザー名 -->
+    <table border="0" cellspacing="0" cellpadding="2">
+        <tbody>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td width="120" align="center" nowrap bgcolor="#F5F9Fd" class="infobox">
+                                    <table border="0" cellspacing="0" cellpadding="4">
+                                        <tbody>
+                                            <tr>
+                                                <td nowrap>
+                                                    <font color="#053394" size="2">認証ユーザー名</font>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="infoul">
+                                    <table border="0" cellpadding="4" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td nowrap>
+                                                    <font size="2" id="username">エラー</font>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table border="0" cellspacing="0" cellpadding="0" width="100%" height="16">
+        <tbody>
+            <tr>
+                <td height="16">
+                    <hr width="100%" size="1" color="#053394" noshade>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" border="0" cellpadding="2" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>
+                    <pre>i-FILTER / &copy; 1999 Digital Arts Inc.</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="0" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>
+                    <font size="2">DateTime:</font>
+                </td>
+                <td>
+                    <font size="2" id="time">2024/11/24 04:09:03</font>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="cgCont" hidden></div>
+</body>
+</html>
