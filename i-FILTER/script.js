@@ -280,8 +280,8 @@ window.onload = function() {
     });
     const dateTime = document.getElementById('time');
     // 現在のURLとクエリを取得
-    if (window.location.href === "https://taikicl.github.io/web/i-FILTER") {
-        window.location.href = "https://taikicl.github.io/web/i-FILTER?url=[クエリに偽ブロックするURLを入力してください]&reason=[クエリにブロック理由のカテゴリーインデックスを入力してください]&username=[クエリに学校用のメールアドレスを入力してください]";
+    if (window.location.href === "https://taikicl.github.io/web/i-FILTER/") {
+        window.location.href = "https://taikicl.github.io/web/i-FILTER/?url=[クエリに偽ブロックするURLを入力してください]&reason=[クエリにブロック理由のカテゴリーインデックスを入力してください]&username=[クエリに学校用のメールアドレスを入力してください]";
     }
     const params = new URLSearchParams(window.location.search);
     const p__url = params.get("url");
