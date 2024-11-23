@@ -280,13 +280,13 @@ window.onload = function() {
     });
     const dateTime = document.getElementById('time');
     // 現在のURLとクエリを取得
-    if (window.location.href === "https://taikicl.github.io/web/i-FILTER/") {
-        window.location.href = "https://taikicl.github.io/web/i-FILTER/?url=[クエリに偽ブロックするURLを入力してください]&reason=[クエリにブロック理由のカテゴリーインデックスを入力してください]&username=[クエリに学校用のメールアドレスを入力してください]";
-    }
     const params = new URLSearchParams(window.location.search);
     const p__url = params.get("url");
     const p__reason = params.get("reason");
     const p__username = params.get("username");
+    if (p__url && p__reason && p__username == null) {
+        window.location.href = "https://taikicl.github.io/web/i-FILTER/?url=[クエリに偽ブロックするURLを入力してください]&reason=-11&username=[クエリに学校用のメールアドレスを入力してください]";
+    }
     // 要素をクエリで指定されたやつに書き換える
     urlText.innerText = `${p__url}`;
     blText.innerText = categories[`${p__reason}`];
