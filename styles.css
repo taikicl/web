@@ -1,0 +1,73 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    margin: 0;
+  }
+
+
+/* ヘッダーのタイトルスタイル */
+header {
+  width: 100%;
+  background-color: #6200ea;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+a:visited{
+  color: #fff;
+}
+
+.list{
+  padding-left: 1.5rem;
+  /* padding-top: 1.5rem; */
+  display: flex;
+}
+  
+  .classroom-card {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    /* background-image: url('https://via.placeholder.com/300x200'); */
+    background-size: cover;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  
+  .card-header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .class-title {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .teacher-name {
+    margin: 5px 0 0;
+    font-size: 1em;
+    font-weight: 300;
+  }
+  
+  .card-footer {
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: right;
+    font-size: 0.9em;
+  }
+  
